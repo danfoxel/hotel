@@ -62,7 +62,6 @@ QString Dialog_nc::Client_gender() const
 		qDebug()<<0;
 	}
 	qDebug()<<101;
-
 }
 
 
@@ -91,7 +90,7 @@ void Dialog_nc::on_pushButton_clicked()
 	x.append(Client_out());
 	x.append(comma);
 
-	x.append("2");   //ну что за косяк, откуда брать это ид??
+    x.append("2");   //this id, from what place?
 	x.append(&end);
 
 	// qDebug()<<x;

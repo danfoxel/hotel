@@ -14,38 +14,21 @@
    <string>MainWindow</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="hotel.qrc">
+   <iconset resource="../hotel.qrc">
     <normaloff>:/images/smiley.png</normaloff>:/images/smiley.png</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QPushButton" name="new_client">
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset resource="hotel.qrc">
-        <normaloff>:/images/list-add.png</normaloff>:/images/list-add.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>32</width>
-        <height>32</height>
-       </size>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
+    <item row="0" column="2">
      <widget class="QPushButton" name="del_client">
       <property name="toolTip">
-       <string>Выписать клиента</string>
+       <string>Check out new client</string>
       </property>
       <property name="text">
        <string/>
       </property>
       <property name="icon">
-       <iconset resource="hotel.qrc">
+       <iconset resource="../hotel.qrc">
         <normaloff>:/images/list-remove.png</normaloff>:/images/list-remove.png</iconset>
       </property>
       <property name="iconSize">
@@ -56,19 +39,19 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="2">
+    <item row="0" column="3">
      <widget class="QPushButton" name="search">
       <property name="enabled">
        <bool>false</bool>
       </property>
       <property name="toolTip">
-       <string>Поиск по свободным номерам и клиентам</string>
+       <string>Search</string>
       </property>
       <property name="text">
        <string/>
       </property>
       <property name="icon">
-       <iconset resource="hotel.qrc">
+       <iconset resource="../hotel.qrc">
         <normaloff>:/images/edit-find.png</normaloff>:/images/edit-find.png</iconset>
       </property>
       <property name="iconSize">
@@ -79,19 +62,20 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="3">
+    <item row="0" column="4">
      <widget class="QPushButton" name="book">
       <property name="enabled">
        <bool>false</bool>
       </property>
       <property name="toolTip">
-       <string>Бронирование</string>
+       <string>Booking
+</string>
       </property>
       <property name="text">
        <string/>
       </property>
       <property name="icon">
-       <iconset resource="hotel.qrc">
+       <iconset resource="../hotel.qrc">
         <normaloff>:/images/filenew.png</normaloff>:/images/filenew.png</iconset>
       </property>
       <property name="iconSize">
@@ -102,16 +86,20 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="4">
+    <item row="0" column="5">
      <widget class="QPushButton" name="serv_finder">
       <property name="toolTip">
-       <string>Заказы на сервисы</string>
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Order service&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="text">
        <string/>
       </property>
       <property name="icon">
-       <iconset resource="hotel.qrc">
+       <iconset resource="../hotel.qrc">
         <normaloff>:/images/fileopen.png</normaloff>:/images/fileopen.png</iconset>
       </property>
       <property name="iconSize">
@@ -122,7 +110,7 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="5">
+    <item row="0" column="6">
      <spacer name="horizontalSpacer">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -135,14 +123,14 @@
       </property>
      </spacer>
     </item>
-    <item row="1" column="0" colspan="6">
+    <item row="1" column="0" colspan="7">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
        <number>0</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
-        <string>Клиенты</string>
+        <string>Clients</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_2">
         <item row="0" column="0">
@@ -162,7 +150,7 @@
       </widget>
       <widget class="QWidget" name="tab_2">
        <attribute name="title">
-        <string>Комнаты</string>
+        <string>Rooms</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_3">
         <item row="0" column="0">
@@ -176,7 +164,7 @@
       </widget>
       <widget class="QWidget" name="tab_3">
        <attribute name="title">
-        <string>Платежи</string>
+        <string>Money check</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_4">
         <item row="0" column="0">
@@ -190,7 +178,7 @@
       </widget>
       <widget class="QWidget" name="tab_4">
        <attribute name="title">
-        <string>Брони</string>
+        <string>Booking</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_5">
         <item row="0" column="0">
@@ -202,6 +190,26 @@
         </item>
        </layout>
       </widget>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="new_client">
+      <property name="toolTip">
+       <string>Check in new client</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="../hotel.qrc">
+        <normaloff>:/images/list-add.png</normaloff>:/images/list-add.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
      </widget>
     </item>
    </layout>
@@ -217,7 +225,7 @@
    </property>
    <widget class="QMenu" name="menu">
     <property name="title">
-     <string>База</string>
+     <string>Select base</string>
     </property>
     <addaction name="action"/>
     <addaction name="action_8"/>
@@ -231,18 +239,18 @@
    </widget>
    <widget class="QMenu" name="menu_2">
     <property name="title">
-     <string>Действия</string>
+     <string>Actions</string>
     </property>
     <addaction name="action_5"/>
-    <addaction name="action_6"/>
     <addaction name="action_7"/>
+    <addaction name="action_6"/>
    </widget>
    <widget class="QMenu" name="menu_3">
     <property name="enabled">
      <bool>false</bool>
     </property>
     <property name="title">
-     <string>Помощь</string>
+     <string>Help</string>
     </property>
    </widget>
    <addaction name="menu"/>
@@ -255,7 +263,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Клиентов</string>
+    <string>Clients</string>
    </property>
   </action>
   <action name="action_2">
@@ -263,7 +271,7 @@
     <bool>false</bool>
    </property>
    <property name="text">
-    <string>Персонала</string>
+    <string>Workers</string>
    </property>
   </action>
   <action name="action_3">
@@ -276,7 +284,7 @@
   </action>
   <action name="action_5">
    <property name="text">
-    <string>Регистрация нового клиента</string>
+    <string>Check in</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+N</string>
@@ -284,7 +292,7 @@
   </action>
   <action name="action_6">
    <property name="text">
-    <string>Заявка на доп.услуги</string>
+    <string>Check off</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+M</string>
@@ -300,28 +308,28 @@
   </action>
   <action name="action_9">
    <property name="text">
-    <string>Переподключиться к базе</string>
+    <string>Reconnect to base</string>
    </property>
   </action>
   <action name="action_12">
    <property name="text">
-    <string>Выход</string>
+    <string>Exit</string>
    </property>
   </action>
   <action name="action_8">
    <property name="text">
-    <string>Комнат</string>
+    <string>Rooms</string>
    </property>
   </action>
   <action name="action_11">
    <property name="text">
-    <string>Платежей</string>
+    <string>Payments</string>
    </property>
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="hotel.qrc"/>
+  <include location="../hotel.qrc"/>
  </resources>
  <connections>
   <connection>

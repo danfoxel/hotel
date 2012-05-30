@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>240</width>
-    <height>152</height>
+    <height>157</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <item row="0" column="2">
     <widget class="QPushButton" name="pushButton_2">
      <property name="text">
-      <string>Отмена</string>
+      <string>Cancel</string>
      </property>
     </widget>
    </item>
@@ -29,7 +29,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Логин</string>
+      <string>Login</string>
      </property>
     </widget>
    </item>
@@ -41,7 +41,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Пароль</string>
+      <string>Pass</string>
      </property>
     </widget>
    </item>
@@ -55,7 +55,7 @@
    <item row="3" column="2">
     <widget class="QPushButton" name="pushButton">
      <property name="text">
-      <string>Открыть вход</string>
+      <string>Open enter</string>
      </property>
     </widget>
    </item>

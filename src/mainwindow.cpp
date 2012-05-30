@@ -17,7 +17,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	ui->setupUi(this);
 
 
-	ui->statusBar->showMessage("Добро пожаловать в систему управления отеля Эко-центр. Если вы попали сюда случайно, нажмите на клавишу выход.");
+    ui->statusBar->showMessage(tr("Hello. If you right here as a stranjer person, please press exit."));
 
 	on_action_9_triggered();
 
@@ -45,17 +45,17 @@ void MainWindow::tablesshow()
 	ui->tableView_room->setModel(model1);
 	ui->tableView_room->setEditTriggers(QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed);
 
-	// model->setHeaderData(0, Qt::Horizontal,("Турист"));
+    // model->setHeaderData(0, Qt::Horizontal,("Tourist"));
 
 }
 
-//выписка клиента
+//deleting client
 void MainWindow::on_del_client_clicked()
 {
 	qDebug()<<"del_client";
 }
 
-//новый клиент
+//new client
 void MainWindow::on_new_client_clicked()
 {
 	Dialog_add dialog(this);
@@ -66,17 +66,15 @@ void MainWindow::on_new_client_clicked()
 	// qDebug()<<"new_client";
 }
 
-//поиск по сервисам
+//serching for service
 void MainWindow::on_serv_finder_clicked()
 {
 	qDebug()<<"serv_finder";
 }
 
-//подключение к БД
+//connecting to bd
 void MainWindow::on_action_9_triggered()
 {
-
-
 	Dialog_con dialog2(this);
 	if (dialog2.exec() != QDialog::Accepted)
 		return;
@@ -86,8 +84,6 @@ void MainWindow::on_action_9_triggered()
 void MainWindow::on_action_triggered()
 {
 	ui->tabWidget->setCurrentIndex(0);
-
-	qDebug()<<"включить первую вкладку";
 }
 
 void MainWindow::on_action_8_triggered()

@@ -33,9 +33,9 @@ void Dialog_con::on_pushButton_clicked()
 	if (ui->le_log->text()=="danfox"&&ui->le_pass->text()=="pass")
 	{
 		ui->button_ok->setEnabled(true);
-		ui->button_ok->setText("Нажмите для входа");
+        ui->button_ok->setText("Press to enter");
 	}
 	else
-		ui->button_ok->setText("Проверьте логин и пароль");
+        ui->button_ok->setText("Check you login and password");
 
 }
