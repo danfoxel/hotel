@@ -1,4 +1,4 @@
-#include <QtCore/QDebug>
+/* #include <QtCore/QDebug>
 
 #include <QtSql/QSqlQuery>
 
@@ -99,4 +99,6 @@ void Dialog_nc::on_pushButton_clicked()
 
 	query.exec(x);
 
+
 }
+*/

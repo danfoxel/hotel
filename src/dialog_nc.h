@@ -1,4 +1,4 @@
-#ifndef DIALOG_NC_H
+/*#ifndef DIALOG_NC_H
 #define DIALOG_NC_H
 
 #include <QtGui/QDialog>
@@ -15,15 +15,15 @@ public:
 	Dialog_nc(QWidget *parent = 0);
 	~Dialog_nc();
 
-	QString Client_fam() const;
-	QString Client_nam() const;
-	QString Client_otc() const;
-	QString Client_pass() const;
-	QString Client_passvid() const;
-	QString Client_passplvid() const;
-	QString Client_in() const;
-	QString Client_out() const;
-	QString Client_gender()const;
+    QString ClientFamily() const;
+    QString ClientName() const;
+    QString ClientOtchestvo() const;
+    QString ClientPasport() const;
+    QString ClientPasEmited() const;
+    QString ClientPasPlEmited() const;
+    QString ClientIn() const;
+    QString ClientOut() const;
+    QString ClientGender()const;
 
 	//   void newquery(const QString &fam,const QString &nam,const  QString &otc,const QString &pass,
 	//                     const QString &passvid,const QString &passplvid,const QString &in,const QString &gender);
@@ -36,3 +36,4 @@ private:
 };
 
 #endif // DIALOG_NC_H
+*/
