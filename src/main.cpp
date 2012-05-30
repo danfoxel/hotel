@@ -1,8 +1,8 @@
 #include <QtGui/QApplication>
 #include "mainwindow.h"
-#include <QtCore>
+
 #include <QtGui>
-#include <QtSql>
+
 
 
 int main(int argc, char *argv[])
