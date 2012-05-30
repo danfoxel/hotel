@@ -1,7 +1,7 @@
 #ifndef DIALOG_NC_H
 #define DIALOG_NC_H
 
-#include <QDialog>
+#include <QtGui/QDialog>
 #include "ui_dialog_nc.h"
 
 class Dialog_nc : public QDialog

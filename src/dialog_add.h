@@ -1,7 +1,7 @@
 #ifndef DIALOG_ADD_H
 #define DIALOG_ADD_H
 
-#include <QDialog>
+#include <QtGui/QDialog>
 #include "ui_dialog_add.h"
 
 class Dialog_add : public QDialog

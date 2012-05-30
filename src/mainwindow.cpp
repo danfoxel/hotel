@@ -1,10 +1,10 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <QDebug>
+#include <QtCore/QDebug>
 #include "dialog_nc.h"
 #include "dialog_con.h"
 #include "dialog_add.h"
-#include <QtSql>
+#include <QtSql/QSqlTableModel>
 
 void MainWindow::tablesshow()
 {

@@ -1,7 +1,7 @@
 #include "dialog_nc.h"
 #include "ui_dialog_nc.h"
-#include "QDebug"
-#include <QtSql>
+#include "QtCore/QDebug"
+#include <QtSql/QSqlQuery>
 
 Dialog_nc::Dialog_nc(QWidget *parent) :
 	QDialog(parent)

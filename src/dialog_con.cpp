@@ -1,10 +1,7 @@
 #include "dialog_con.h"
 #include "ui_dialog_con.h"
-#include <QSqlDatabase>
-#include <QDebug>
-#include <QObject>
-
-#include <QtSql>
+#include <QtSql/QSqlDatabase>
+#include <QtCore/QDebug>
 
 Dialog_con::Dialog_con(QWidget *parent) :
     QDialog(parent)
