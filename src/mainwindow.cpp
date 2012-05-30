@@ -17,7 +17,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	ui->setupUi(this);
 
 
-    ui->statusBar->showMessage(tr("Hello. If you right here as a stranjer person, please press exit."));
+	ui->statusBar->showMessage(tr("Hello. If you right here as a stranjer person, please press exit."));
 
 	on_action_9_triggered();
 
@@ -45,7 +45,7 @@ void MainWindow::tablesshow()
 	ui->tableView_room->setModel(model1);
 	ui->tableView_room->setEditTriggers(QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed);
 
-    // model->setHeaderData(0, Qt::Horizontal,("Tourist"));
+	// model->setHeaderData(0, Qt::Horizontal,("Tourist"));
 
 }
 
@@ -75,16 +75,13 @@ void MainWindow::on_serv_finder_clicked()
 //connecting to bd
 void MainWindow::on_action_9_triggered()
 {
-	Dialog_con dialog2(this);
+	Dialog_con dialog (this);
 
-    //right here, if i`m pressing cancel in dialog2 i need close main window
-
-    if (dialog2.Rejected == QDialog::Rejected)
-        ;
-	if (dialog2.exec() != QDialog::Accepted)
-		return;
-
-	tablesshow();
+	if (dialog.exec() == QDialog::Accepted) {
+		tablesshow();
+	} else {
+		close ();
+	}
 }
 
 void MainWindow::on_action_triggered()
