@@ -1,6 +1,6 @@
 #include "dialog_nc.h"
 #include "ui_dialog_nc.h"
-#include "QtCore/QDebug"
+#include <QtCore/QDebug>
 #include <QtSql/QSqlQuery>
 
 Dialog_nc::Dialog_nc(QWidget *parent) :
