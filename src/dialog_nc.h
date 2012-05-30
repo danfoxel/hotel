@@ -1,4 +1,6 @@
-/*#ifndef DIALOG_NC_H
+/*
+
+#ifndef DIALOG_NC_H
 #define DIALOG_NC_H
 
 #include <QtGui/QDialog>
@@ -36,4 +38,5 @@ private:
 };
 
 #endif // DIALOG_NC_H
+
 */
