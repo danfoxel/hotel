@@ -16,7 +16,7 @@ Dialog_nc::~Dialog_nc()
 
 QString Dialog_nc::Client_fam() const
 {
-	 qDebug()<<101;
+	qDebug()<<101;
 	return ui.lineEdit->text();
 }
 QString Dialog_nc::Client_nam() const
@@ -92,7 +92,7 @@ void Dialog_nc::on_pushButton_clicked()
 	x.append("2");   //ну что за косяк, откуда брать это ид??
 	x.append(&end);
 
-   // qDebug()<<x;
+	// qDebug()<<x;
 
 	QSqlQuery query;
 
