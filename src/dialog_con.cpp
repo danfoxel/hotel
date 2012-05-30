@@ -13,6 +13,7 @@ Dialog_con::Dialog_con(QWidget *parent) :
 
 Dialog_con::~Dialog_con()
 {
+	delete ui;
 }
 
 

@@ -2,7 +2,10 @@
 #define DIALOG_NC_H
 
 #include <QtGui/QDialog>
-#include "ui_dialog_nc.h"
+
+namespace Ui {
+class Dialog_nc;
+}
 
 class Dialog_nc : public QDialog
 {
@@ -29,7 +32,7 @@ private slots:
 	void on_pushButton_clicked();
 
 private:
-	Ui::Dialog_nc ui;
+	Ui::Dialog_nc *ui;
 };
 
 #endif // DIALOG_NC_H
