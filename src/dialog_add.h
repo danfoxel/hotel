@@ -2,7 +2,12 @@
 #define DIALOG_ADD_H
 
 #include <QtGui/QDialog>
-#include "ui_dialog_add.h"
+
+namespace Ui {
+class Dialog_add;
+}
+
+class QDate;
 
 class Dialog_add : public QDialog
 {
@@ -20,7 +25,7 @@ private slots:
 	void on_pushButton_clicked();
 
 private:
-	Ui::Dialog_add ui;
+	Ui::Dialog_add *ui;
 };
 
 #endif // DIALOG_ADD_H
