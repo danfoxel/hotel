@@ -10,21 +10,21 @@ TARGET = hotel
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        mainwindow.cpp \
-    dialog_nc.cpp \
-    dialog_con.cpp \
-    dialog_add.cpp
+SOURCES += src/main.cpp\
+        src/mainwindow.cpp \
+    src/dialog_nc.cpp \
+    src/dialog_con.cpp \
+    src/dialog_add.cpp
 
-HEADERS  += mainwindow.h \
-    dialog_nc.h \
-    dialog_con.h \
-    dialog_add.h
+HEADERS  += src/mainwindow.h \
+    src/dialog_nc.h \
+    src/dialog_con.h \
+    src/dialog_add.h
 
-FORMS    += mainwindow.ui \
-    dialog_nc.ui \
-    dialog_con.ui \
-    dialog_add.ui
+FORMS    += src/mainwindow.ui \
+    src/dialog_nc.ui \
+    src/dialog_con.ui \
+    src/dialog_add.ui
 
 RESOURCES += \
     hotel.qrc
