@@ -1,10 +1,32 @@
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
 #include <QtCore/QDebug>
+
+#include <QtSql/QSqlTableModel>
+
 #include "dialog_nc.h"
 #include "dialog_con.h"
 #include "dialog_add.h"
-#include <QtSql/QSqlTableModel>
+
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
+
+
+MainWindow::MainWindow(QWidget *parent) :
+	QMainWindow(parent),
+	ui(new Ui::MainWindow)
+{
+	ui->setupUi(this);
+
+
+	ui->statusBar->showMessage("Добро пожаловать в систему управления отеля Эко-центр. Если вы попали сюда случайно, нажмите на клавишу выход.");
+
+	on_action_9_triggered();
+
+}
+
+MainWindow::~MainWindow()
+{
+	delete ui;
+}
 
 void MainWindow::tablesshow()
 {
@@ -26,28 +48,6 @@ void MainWindow::tablesshow()
 	// model->setHeaderData(0, Qt::Horizontal,("Турист"));
 
 }
-
-
-
-MainWindow::MainWindow(QWidget *parent) :
-	QMainWindow(parent),
-	ui(new Ui::MainWindow)
-{
-	ui->setupUi(this);
-
-
-	ui->statusBar->showMessage("Добро пожаловать в систему управления отеля Эко-центр. Если вы попали сюда случайно, нажмите на клавишу выход.");
-
-	on_action_9_triggered();
-
-}
-
-MainWindow::~MainWindow()
-{
-	delete ui;
-}
-
-
 
 //выписка клиента
 void MainWindow::on_del_client_clicked()

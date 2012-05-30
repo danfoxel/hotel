@@ -1,9 +1,8 @@
-#include <QtGui/QApplication>
-#include "mainwindow.h"
-
 #include <QtCore/QTextCodec>
 
+#include <QtGui/QApplication>
 
+#include "mainwindow.h"
 
 int main(int argc, char *argv[])
 {
