@@ -1,4 +1,5 @@
 #include <QtCore/QDebug>
+#include <QtCore/QTimer>
 
 #include <QtSql/QSqlTableModel>
 
@@ -80,7 +81,7 @@ void MainWindow::on_action_9_triggered()
 	if (dialog.exec() == QDialog::Accepted) {
 		tablesshow();
 	} else {
-		close ();
+		QTimer::singleShot (0, this, SLOT (close ()));
 	}
 }
 
