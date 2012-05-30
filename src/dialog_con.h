@@ -2,7 +2,10 @@
 #define DIALOG_CON_H
 
 #include <QtGui/QDialog>
-#include "ui_dialog_con.h"
+
+namespace Ui {
+class Dialog_con;
+}
 
 class Dialog_con : public QDialog
 {
@@ -18,7 +21,7 @@ private slots:
 	void on_pushButton_clicked();
 
 private:
-	Ui::Dialog_con ui;
+	Ui::Dialog_con *ui;
 };
 
 #endif // DIALOG_CON_H
