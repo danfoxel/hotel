@@ -1,4 +1,4 @@
-#include "DialogAdd.h"
+#include "dialogadd.h"
 #include "ui_dialogadd.h"
 
 DialogAdd::DialogAdd(QWidget *parent) :

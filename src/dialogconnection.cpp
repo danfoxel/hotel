@@ -3,7 +3,7 @@
 #include <QtSql/QSqlDatabase>
 
 #include "dialogconnection.h"
-#include "ui_DialogConnection.h"
+#include "ui_dialogconnection.h"
 
 DialogConnection::DialogConnection(QWidget *parent) :
 	QDialog(parent), ui (new Ui::DialogConnection)
@@ -28,9 +28,9 @@ void DialogConnection::on_button_ok_clicked()
 
 void DialogConnection::on_pushButton_clicked()
 {
-    if (ui->le_log->text()=="danfox"&&ui->le_pass->text()=="pass") {
+	if (ui->le_log->text()=="danfox"&&ui->le_pass->text()=="pass") {
 		ui->button_ok->setEnabled(true);
-        ui->button_ok->setText("Press to enter");
-    } else
-        ui->button_ok->setText("Check you login and password");
+		ui->button_ok->setText("Press to enter");
+	} else
+		ui->button_ok->setText("Check you login and password");
 }
