@@ -1,5 +1,5 @@
-#ifndef AddDialog_H
-#define AddDialog_H
+#ifndef ADDDIALOG_H
+#define ADDDIALOG_H
 
 #include <QtGui/QDialog>
 
@@ -29,4 +29,4 @@ private:
     Ui::AddDialog *ui;
 };
 
-#endif // AddDialog_H
+#endif // ADDDIALOG_H

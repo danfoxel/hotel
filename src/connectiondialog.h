@@ -1,5 +1,5 @@
-#ifndef ConnectionDialog_H
-#define ConnectionDialog_H
+#ifndef CONNECTIONDIALOG_H
+#define CONNECTIONDialog_H
 
 #include <QtGui/QDialog>
 
@@ -25,4 +25,4 @@ private:
     Ui::ConnectionDialog *ui;
 };
 
-#endif // ConnectionDialog_H
+#endif // CONNECTIONDIALOG_H
