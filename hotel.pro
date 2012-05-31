@@ -12,16 +12,16 @@ TEMPLATE = app
 
 SOURCES += src/main.cpp\
         src/mainwindow.cpp \
-	src/dialogconnection.cpp \
-	src/dialogadd.cpp
+	src/connectiondialog.cpp \
+	src/adddialog.cpp
 
 HEADERS  += src/mainwindow.h \
-	src/dialogconnection.h \
-	src/dialogadd.h
+	src/connectiondialog.h \
+	src/adddialog.h
 
 FORMS    += src/mainwindow.ui \
-	src/dialogconnection.ui \
-	src/dialogadd.ui
+	src/connectiondialog.ui \
+	src/adddialog.ui
 
 RESOURCES += \
     hotel.qrc

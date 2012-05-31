@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>DialogConnection</class>
- <widget class="QDialog" name="DialogConnection">
+ <class>ConnectionDialog</class>
+ <widget class="QDialog" name="ConnectionDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -83,7 +83,7 @@
   <connection>
    <sender>pushButton_2</sender>
    <signal>clicked()</signal>
-   <receiver>DialogConnection</receiver>
+   <receiver>ConnectionDialog</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -99,7 +99,7 @@
   <connection>
    <sender>button_ok</sender>
    <signal>clicked()</signal>
-   <receiver>DialogConnection</receiver>
+   <receiver>ConnectionDialog</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">

@@ -1,21 +1,21 @@
-#ifndef DialogAdd_H
-#define DialogAdd_H
+#ifndef AddDialog_H
+#define AddDialog_H
 
 #include <QtGui/QDialog>
 
 namespace Ui {
-class DialogAdd;
+class AddDialog;
 }
 
 class QDate;
 
-class DialogAdd : public QDialog
+class AddDialog : public QDialog
 {
 	Q_OBJECT
 
 public:
-    DialogAdd(QWidget *parent = 0);
-    ~DialogAdd();
+    AddDialog(QWidget *parent = 0);
+    ~AddDialog();
 
 private slots:
 
@@ -26,7 +26,7 @@ private slots:
 	void on_pushButton_clicked();
 
 private:
-    Ui::DialogAdd *ui;
+    Ui::AddDialog *ui;
 };
 
-#endif // DialogAdd_H
+#endif // AddDialog_H
