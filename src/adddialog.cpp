@@ -18,6 +18,7 @@ AddDialog::~AddDialog()
 void AddDialog::firstDateChaged(const QDate &date)
 {
 	ui->label_4->setText(date.toString("ddd d MMMM yyyy"));
+	ui->tabWidget->setCurrentIndex (1);
 }
 
 void AddDialog::secondDateChaged(const QDate &date)
