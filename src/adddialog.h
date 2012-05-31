@@ -21,9 +21,9 @@ private slots:
 
 	void firstDateChaged(const QDate &date);
 
-	void on_calendarWidget_2_clicked(const QDate &date);
+	void secondDateChaged(const QDate &date);
 
-	void on_pushButton_clicked();
+	void nextTab();
 
 private:
 	Ui::AddDialog *ui;
