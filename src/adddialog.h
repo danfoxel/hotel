@@ -14,8 +14,8 @@ class AddDialog : public QDialog
 	Q_OBJECT
 
 public:
-    AddDialog(QWidget *parent = 0);
-    ~AddDialog();
+	AddDialog(QWidget *parent = 0);
+	~AddDialog();
 
 private slots:
 
@@ -26,7 +26,7 @@ private slots:
 	void on_pushButton_clicked();
 
 private:
-    Ui::AddDialog *ui;
+	Ui::AddDialog *ui;
 };
 
 #endif // ADDDIALOG_H
