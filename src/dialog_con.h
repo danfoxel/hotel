@@ -16,6 +16,7 @@ public:
 	~Dialog_con();
 
 private slots:
+
 	void on_button_ok_clicked();
 
 	void on_pushButton_clicked();

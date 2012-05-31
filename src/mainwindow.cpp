@@ -3,10 +3,8 @@
 
 #include <QtSql/QSqlTableModel>
 
-#include "dialog_nc.h"
 #include "dialog_con.h"
 #include "dialog_add.h"
-
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -17,11 +15,9 @@ MainWindow::MainWindow(QWidget *parent) :
 {
 	ui->setupUi(this);
 
-
 	ui->statusBar->showMessage(tr("Hello. If you right here as a stranjer person, please press exit."));
 
 	on_action_9_triggered();
-
 }
 
 MainWindow::~MainWindow()
@@ -38,16 +34,13 @@ void MainWindow::tablesshow()
 	ui->tableView_client->setModel(model);
 	ui->tableView_client->setEditTriggers(QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed);
 
-
 	QSqlTableModel *model1 = new QSqlTableModel(ui->tableView_room, QSqlDatabase::database("hotel"));
 	model1->setTable("Room");
 	model1->setEditStrategy(QSqlTableModel::OnFieldChange);
 	model1->select();
 	ui->tableView_room->setModel(model1);
 	ui->tableView_room->setEditTriggers(QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed);
-
 	// model->setHeaderData(0, Qt::Horizontal,("Tourist"));
-
 }
 
 //deleting client
@@ -63,7 +56,6 @@ void MainWindow::on_new_client_clicked()
 	if (dialog.exec() != QDialog::Accepted)
 		return;
 	//tablesshow();
-
 	// qDebug()<<"new_client";
 }
 
@@ -77,7 +69,6 @@ void MainWindow::on_serv_finder_clicked()
 void MainWindow::on_action_9_triggered()
 {
 	Dialog_con dialog (this);
-
 	if (dialog.exec() == QDialog::Accepted) {
 		tablesshow();
 	} else {
@@ -95,16 +86,12 @@ void MainWindow::on_action_8_triggered()
 	ui->tabWidget->setCurrentIndex(1);
 }
 
-
 void MainWindow::on_action_11_triggered()
 {
 	ui->tabWidget->setCurrentIndex(2);
 }
 
-
 void MainWindow::on_action_3_triggered()
 {
 	ui->tabWidget->setCurrentIndex(3);
 }
-
-

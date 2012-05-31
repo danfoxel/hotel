@@ -16,7 +16,6 @@ Dialog_con::~Dialog_con()
 	delete ui;
 }
 
-
 void Dialog_con::on_button_ok_clicked()
 {
 	QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
@@ -24,18 +23,14 @@ void Dialog_con::on_button_ok_clicked()
 	if (!db.open()) {
 		qDebug()<<0;
 	}
-
 	qDebug()<<1;
 }
 
 void Dialog_con::on_pushButton_clicked()
 {
-	if (ui->le_log->text()=="danfox"&&ui->le_pass->text()=="pass")
-	{
+    if (ui->le_log->text()=="danfox"&&ui->le_pass->text()=="pass") {
 		ui->button_ok->setEnabled(true);
         ui->button_ok->setText("Press to enter");
-	}
-	else
+    } else
         ui->button_ok->setText("Check you login and password");
-
 }

@@ -18,6 +18,7 @@ public:
 	~Dialog_add();
 
 private slots:
+
 	void on_calendarWidget_clicked(const QDate &date);
 
 	void on_calendarWidget_2_clicked(const QDate &date);
