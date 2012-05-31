@@ -19,7 +19,7 @@ public:
 
 private slots:
 
-	void on_calendarWidget_clicked(const QDate &date);
+	void firstDateChaged(const QDate &date);
 
 	void on_calendarWidget_2_clicked(const QDate &date);
 

@@ -52,7 +52,7 @@ void MainWindow::on_del_client_clicked()
 //new client
 void MainWindow::on_new_client_clicked()
 {
-    AddDialog dialog(this);
+	AddDialog dialog(this);
 	if (dialog.exec() != QDialog::Accepted)
 		return;
 	//tablesshow();
@@ -68,7 +68,7 @@ void MainWindow::on_serv_finder_clicked()
 //connecting to bd
 void MainWindow::on_action_9_triggered()
 {
-    ConnectionDialog dialog (this);
+	ConnectionDialog dialog (this);
 	if (dialog.exec() == QDialog::Accepted) {
 		tablesshow();
 	} else {
