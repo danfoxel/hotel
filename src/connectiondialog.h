@@ -1,5 +1,5 @@
 #ifndef CONNECTIONDIALOG_H
-#define CONNECTIONDialog_H
+#define CONNECTIONDIALOG_H
 
 #include <QtGui/QDialog>
 
@@ -12,8 +12,8 @@ class ConnectionDialog : public QDialog
 	Q_OBJECT
 
 public:
-    ConnectionDialog(QWidget *parent = 0);
-    ~ConnectionDialog();
+	ConnectionDialog(QWidget *parent = 0);
+	~ConnectionDialog();
 
 private slots:
 
@@ -22,7 +22,7 @@ private slots:
 	void on_pushButton_clicked();
 
 private:
-    Ui::ConnectionDialog *ui;
+	Ui::ConnectionDialog *ui;
 };
 
 #endif // CONNECTIONDIALOG_H
