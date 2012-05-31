@@ -3,8 +3,8 @@
 
 #include <QtSql/QSqlTableModel>
 
-#include "dialog_con.h"
-#include "dialog_add.h"
+#include "dialogconnection.h"
+#include "dialogadd.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -52,7 +52,7 @@ void MainWindow::on_del_client_clicked()
 //new client
 void MainWindow::on_new_client_clicked()
 {
-	Dialog_add dialog(this);
+	DialogAdd dialog(this);
 	if (dialog.exec() != QDialog::Accepted)
 		return;
 	//tablesshow();
@@ -68,7 +68,7 @@ void MainWindow::on_serv_finder_clicked()
 //connecting to bd
 void MainWindow::on_action_9_triggered()
 {
-	Dialog_con dialog (this);
+    DialogConnection dialog (this);
 	if (dialog.exec() == QDialog::Accepted) {
 		tablesshow();
 	} else {

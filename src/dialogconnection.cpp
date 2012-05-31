@@ -2,21 +2,21 @@
 
 #include <QtSql/QSqlDatabase>
 
-#include "dialog_con.h"
-#include "ui_dialog_con.h"
+#include "dialogconnection.h"
+#include "ui_DialogConnection.h"
 
-Dialog_con::Dialog_con(QWidget *parent) :
-	QDialog(parent), ui (new Ui::Dialog_con)
+DialogConnection::DialogConnection(QWidget *parent) :
+	QDialog(parent), ui (new Ui::DialogConnection)
 {
 	ui->setupUi(this);
 }
 
-Dialog_con::~Dialog_con()
+DialogConnection::~DialogConnection()
 {
 	delete ui;
 }
 
-void Dialog_con::on_button_ok_clicked()
+void DialogConnection::on_button_ok_clicked()
 {
 	QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
 	db.setDatabaseName("hotel");
@@ -26,7 +26,7 @@ void Dialog_con::on_button_ok_clicked()
 	qDebug()<<1;
 }
 
-void Dialog_con::on_pushButton_clicked()
+void DialogConnection::on_pushButton_clicked()
 {
     if (ui->le_log->text()=="danfox"&&ui->le_pass->text()=="pass") {
 		ui->button_ok->setEnabled(true);

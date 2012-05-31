@@ -279,7 +279,7 @@ p, li { white-space: pre-wrap; }
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Броней</string>
+    <string>Booking</string>
    </property>
   </action>
   <action name="action_5">
